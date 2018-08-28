@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-delay: 0.2s;
+}
+header {
+  background-image: url("https://i.ytimg.com/vi/7dkrwPrmH-Y/maxresdefault.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: 15px;
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+  animation-delay: 0.2s;
+}
+.header-text-h3 {
+  color: white;
+  font-size: 50px;
+  text-align: left;
+  line-height: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-text-h1 {
+  color: white;
+  font-size: 150px;
+  text-align: left;
+}
+
+.header-text-p {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  font-style: italic;
+  line-height: 0.5px;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.col-title {
+  margin-top: 30px;
+  padding: 0;
+  background-color: rgba(66, 95, 122, 0.993);
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  height: 30px;
+  line-height: 0;
+}
+.col-title h1 {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.col-title a {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+.col-subtitle {
+  line-height: 1.2em;
+  margin: 15px 0;
+}
+
+.col-subtitle p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.col-content {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.second-col-title {
+  margin-top: 5px;
+  text-align: right;
+  border-bottom: 2px solid rgba(66, 95, 122, 0.993);
+  color: rgba(66, 95, 122, 0.993);
+}
+
+.second-col-title h1 {
+  line-height: 1em;
+  font-size: 30px;
+}
+.second-col-title p {
+  line-height: 2.8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.second-col-content {
+  margin: 15px;
+  border: 1px solid rgba(66, 95, 122, 0.993);
+  border-radius: 6px;
+}
+
+.second-col-content p {
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+footer p {
+  color: rgba(66, 95, 122, 0.993);
+  text-align: right;
+  margin: 0;
+  padding-right: 5px;
+  font-weight: bold;
+}
